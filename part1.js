@@ -30,3 +30,4 @@ let cell4 = dataArray[4] + '\n';
 // Utilizing the output format requested
     console.log(headerCell, cell1,  cell2, cell3, cell4);
 
+
