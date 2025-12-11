@@ -31,3 +31,4 @@ let cell4 = dataArray[4] + '\n';
     console.log(headerCell, cell1,  cell2, cell3, cell4);
 
 
+// Time to test some example data! Review file part1-testexample.js
