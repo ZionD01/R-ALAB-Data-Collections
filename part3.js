@@ -16,5 +16,27 @@
 
 let data = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26`;
 
+let dataArray = data.split("," && "\n");
 
-const dataObject = {};
+let headerCell = dataArray[0].split(",");
+let cell1 = dataArray[1].split(",");
+let cell2 = dataArray[2].split(",");
+let cell3 = dataArray[3].split(",");
+let cell4 = dataArray[4].split(",");
+
+let fullDataArray = [headerCell, cell1, cell2, cell3, cell4];
+
+//I'm going to try using the .map() method to assign the first set of elements as properties
+
+const newDataArray = fullDataArray.map((element) => {
+    return {
+       ID: element[1][0],
+       Name: element[1][1],
+       Occupation: element[1][2],
+       Age: element[1][3]
+    };
+})
+
+console.log(newDataArray);
+
+// ...In Progress
