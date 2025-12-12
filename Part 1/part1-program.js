@@ -17,7 +17,6 @@ let data =`ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Bl
 
 let dataArray = data.split("," && "\n");
 
- //   console.log(dataArray); // Checking to see how the array was returned
 
 // Set up the cells
 let headerCell = dataArray[0] + '\n';
